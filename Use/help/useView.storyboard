@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vYI-uW-t4A">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--use View Controller-->
+        <scene sceneID="HsL-Lb-I5C">
+            <objects>
+                <viewController id="vYI-uW-t4A" userLabel="use View Controller" customClass="useView" customModule="SHSinfoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eMw-G7-oIc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OFc-g0-Rwf">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="7Gf-TO-sQx"/>
+                                    <constraint firstAttribute="width" constant="70" id="DdZ-pj-eil"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="vYI-uW-t4A" eventType="touchUpInside" id="ubQ-nn-eMh"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qvi-mz-8sb">
+                                <rect key="frame" x="0.0" y="74" width="414" height="822"/>
+                                <gestureRecognizers/>
+                            </scrollView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="m20-FW-Bvv"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Qvi-mz-8sb" firstAttribute="trailing" secondItem="m20-FW-Bvv" secondAttribute="trailing" id="Iqy-RQ-ZCx"/>
+                            <constraint firstItem="Qvi-mz-8sb" firstAttribute="top" secondItem="OFc-g0-Rwf" secondAttribute="bottom" id="VQp-GU-Aj0"/>
+                            <constraint firstItem="OFc-g0-Rwf" firstAttribute="leading" secondItem="m20-FW-Bvv" secondAttribute="leading" id="d8b-kR-WXH"/>
+                            <constraint firstAttribute="bottom" secondItem="Qvi-mz-8sb" secondAttribute="bottom" id="jT5-FJ-Xru"/>
+                            <constraint firstItem="Qvi-mz-8sb" firstAttribute="leading" secondItem="m20-FW-Bvv" secondAttribute="leading" id="kPS-sb-j9k"/>
+                            <constraint firstItem="OFc-g0-Rwf" firstAttribute="top" secondItem="m20-FW-Bvv" secondAttribute="top" id="mMu-ar-h5U"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnModoru" destination="OFc-g0-Rwf" id="GRd-Zp-bqY"/>
+                        <outlet property="scrollView" destination="Qvi-mz-8sb" id="m3B-k2-QEK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fji-dj-dTE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="85" y="172"/>
+        </scene>
+    </scenes>
+</document>

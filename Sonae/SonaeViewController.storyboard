@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="x5a-iy-ISN">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="Stack View standard spacing" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sonae View Controller-->
+        <scene sceneID="PWp-uE-6kd">
+            <objects>
+                <viewController id="x5a-iy-ISN" customClass="SonaeViewController" customModule="SHSinfo2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8CO-a9-sv6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="mGe-ij-vmk">
+                                <rect key="frame" x="50" y="94" width="314" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="zTS-O9-iLP">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="289"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="m5s-I8-NZZ">
+                                                <rect key="frame" x="0.0" y="0.0" width="157" height="289"/>
+                                                <subviews>
+                                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="OGG-UR-BDp">
+                                                        <rect key="frame" x="0.0" y="0.0" width="157" height="289"/>
+                                                        <subviews>
+                                                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0QI-yx-TGp">
+                                                                <rect key="frame" x="0.0" y="0.0" width="157" height="228"/>
+                                                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                                <state key="normal" title="Button" image="motidasi"/>
+                                                                <connections>
+                                                                    <action selector="motiBtn:" destination="x5a-iy-ISN" eventType="touchUpInside" id="cFz-4j-vrI"/>
+                                                                </connections>
+                                                            </button>
+                                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="非常用持ち出し品リスト" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sHF-WQ-gHY">
+                                                                <rect key="frame" x="0.0" y="229" width="157" height="60"/>
+                                                                <constraints>
+                                                                    <constraint firstAttribute="height" constant="60" id="ul4-em-SfS"/>
+                                                                </constraints>
+                                                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                <nil key="textColor"/>
+                                                                <nil key="highlightedColor"/>
+                                                            </label>
+                                                        </subviews>
+                                                    </stackView>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="dko-fT-w2o">
+                                                <rect key="frame" x="157" y="0.0" width="157" height="289"/>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="iIb-Sf-LUh">
+                                        <rect key="frame" x="0.0" y="329" width="314" height="289"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="1x6-7x-lsm">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="289"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oN0-Ks-TDe">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="229"/>
+                                                        <state key="normal" title="Button" image="g1-hinanjomap"/>
+                                                        <connections>
+                                                            <action selector="btn1:" destination="x5a-iy-ISN" eventType="touchUpInside" id="wob-va-G9s"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="避難所" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RDk-Ip-HGz">
+                                                        <rect key="frame" x="0.0" y="229" width="132" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="9qR-tX-2UM"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" translatesAutoresizingMaskIntoConstraints="NO" id="Y9P-h2-fPG">
+                                                <rect key="frame" x="182" y="0.0" width="132" height="289"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="afg-hc-TLv">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="229"/>
+                                                        <state key="normal" title="Button" image="g1-hazard-map"/>
+                                                        <connections>
+                                                            <action selector="btn2:" destination="x5a-iy-ISN" eventType="touchUpInside" id="t2I-Rf-hkE"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ハザードマップ" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zn0-wV-Qpc">
+                                                        <rect key="frame" x="0.0" y="229" width="132" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="CgT-xa-Cvg"/>
+                                                        </constraints>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="akF-Ax-XzE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="mGe-ij-vmk" firstAttribute="leading" secondItem="akF-Ax-XzE" secondAttribute="leading" constant="50" id="ezM-Y6-3nm"/>
+                            <constraint firstAttribute="trailing" secondItem="mGe-ij-vmk" secondAttribute="trailing" constant="50" id="l8E-Yz-J47"/>
+                            <constraint firstItem="akF-Ax-XzE" firstAttribute="bottom" secondItem="mGe-ij-vmk" secondAttribute="bottom" constant="150" id="uIf-kl-9iA"/>
+                            <constraint firstItem="mGe-ij-vmk" firstAttribute="top" secondItem="akF-Ax-XzE" secondAttribute="top" constant="50" id="yn3-yk-8wf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="oN0-Ks-TDe" id="eah-0R-U9U"/>
+                        <outlet property="btn2" destination="afg-hc-TLv" id="RDn-2T-O4e"/>
+                        <outlet property="mochiLabel" destination="sHF-WQ-gHY" id="ul6-St-FNK"/>
+                        <outlet property="motiBtn" destination="0QI-yx-TGp" id="cWt-3h-f3x"/>
+                        <outlet property="view1" destination="mGe-ij-vmk" id="7hO-qy-hab"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j35-NK-as3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="89.855072463768124" y="81.696428571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="g1-hazard-map" width="200" height="200"/>
+        <image name="g1-hinanjomap" width="200" height="200"/>
+        <image name="motidasi" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

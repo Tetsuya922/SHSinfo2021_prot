@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jR4-6O-Zrg">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tenki View Controller-->
+        <scene sceneID="iDJ-dR-Q8i">
+            <objects>
+                <viewController id="jR4-6O-Zrg" customClass="TenkiViewController" customModule="SHSinfoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="YXi-Ld-neC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1yo-e2-FdO">
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v7l-NL-c8E">
+                                        <rect key="frame" x="39" y="38" width="159" height="150"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="g2-jishin"/>
+                                        <connections>
+                                            <action selector="btn1:" destination="jR4-6O-Zrg" eventType="touchUpInside" id="xcY-fY-o6l"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OlA-Nn-JJG">
+                                        <rect key="frame" x="228" y="52" width="138" height="157"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="g2-kazan"/>
+                                        <connections>
+                                            <action selector="btn2:" destination="jR4-6O-Zrg" eventType="touchUpInside" id="vSQ-kq-m6H"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3k3-Bf-qtv">
+                                        <rect key="frame" x="39" y="254" width="182" height="178"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="g2-keihou"/>
+                                        <connections>
+                                            <action selector="btn3:" destination="jR4-6O-Zrg" eventType="touchUpInside" id="ZkC-Da-4Mx"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d73-v4-sjW">
+                                        <rect key="frame" x="233" y="254" width="181" height="165"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="g2-tenki"/>
+                                        <connections>
+                                            <action selector="btn4:" destination="jR4-6O-Zrg" eventType="touchUpInside" id="R2u-v8-LsA"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r3x-hs-XbU">
+                                        <rect key="frame" x="142" y="582" width="131" height="146"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="Button" image="g2-titen"/>
+                                        <connections>
+                                            <action selector="btn5:" destination="jR4-6O-Zrg" eventType="touchUpInside" id="At4-Fc-11q"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="tHF-xw-xmz"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="tHF-xw-xmz" firstAttribute="bottom" secondItem="1yo-e2-FdO" secondAttribute="bottom" constant="40" id="8dr-AH-bB3"/>
+                            <constraint firstItem="tHF-xw-xmz" firstAttribute="trailing" secondItem="1yo-e2-FdO" secondAttribute="trailing" id="FDS-d2-RaX"/>
+                            <constraint firstItem="1yo-e2-FdO" firstAttribute="leading" secondItem="tHF-xw-xmz" secondAttribute="leading" id="RdC-Dv-cfn"/>
+                            <constraint firstItem="1yo-e2-FdO" firstAttribute="top" secondItem="tHF-xw-xmz" secondAttribute="top" id="SFK-Gn-a1z"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="v7l-NL-c8E" id="AYr-k4-ElB"/>
+                        <outlet property="btn2" destination="OlA-Nn-JJG" id="qxp-x6-2ur"/>
+                        <outlet property="btn3" destination="3k3-Bf-qtv" id="CQ6-7Z-vak"/>
+                        <outlet property="btn4" destination="d73-v4-sjW" id="HUU-De-sej"/>
+                        <outlet property="btn5" destination="r3x-hs-XbU" id="Me7-Xj-L14"/>
+                        <outlet property="view1" destination="1yo-e2-FdO" id="uLd-3q-7Ng"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eQU-hM-2sA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="71.014492753623188" y="58.928571428571423"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="g2-jishin" width="300" height="300"/>
+        <image name="g2-kazan" width="300" height="300"/>
+        <image name="g2-keihou" width="300" height="300"/>
+        <image name="g2-tenki" width="300" height="300"/>
+        <image name="g2-titen" width="300" height="300"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="7gn-n8-X1u">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Rakka start View Controller-->
+        <scene sceneID="iBN-QF-pMr">
+            <objects>
+                <viewController id="7gn-n8-X1u" customClass="rakka_startViewController" customModule="SHSinfo2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="csg-WE-RD1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="idW-3L-3AN">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="gau-ly-Kk4"/>
+                                    <constraint firstAttribute="height" constant="30" id="p7C-55-A04"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="modoruBtn:" destination="7gn-n8-X1u" eventType="touchUpInside" id="MI4-2O-yyk"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zqu-gt-Qmu">
+                                <rect key="frame" x="70" y="44" width="344" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="zbI-fG-gcx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R0O-wK-3O1">
+                                <rect key="frame" x="0.0" y="104" width="414" height="708"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hRk-md-M8R">
+                                        <rect key="frame" x="10" y="10" width="394" height="688"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_gunte.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="MAm-FZ-Cgx">
+                                                <rect key="frame" x="8" y="218" width="92" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_bousai_kaichudentou.png" translatesAutoresizingMaskIntoConstraints="NO" id="DEV-kp-FqH">
+                                                <rect key="frame" x="108" y="229" width="91" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_bousai_water.png" translatesAutoresizingMaskIntoConstraints="NO" id="uaP-Jh-06P">
+                                                <rect key="frame" x="207" y="240" width="79" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_bousai_kanpan.png" translatesAutoresizingMaskIntoConstraints="NO" id="tHD-A3-1DD">
+                                                <rect key="frame" x="306" y="240" width="58" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7U9-Wz-mU1">
+                                                <rect key="frame" x="31" y="104" width="332" height="21"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_soccer_ball.png" translatesAutoresizingMaskIntoConstraints="NO" id="Sot-dw-O74">
+                                                <rect key="frame" x="8" y="483" width="92" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="rakka_portable_game.png" translatesAutoresizingMaskIntoConstraints="NO" id="v6O-sl-4PQ">
+                                                <rect key="frame" x="146" y="483" width="104" height="128"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="ここ" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="42J-Sa-KVs">
+                                                <rect key="frame" x="31" y="407" width="332" height="20"/>
+                                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="hRk-md-M8R" secondAttribute="trailing" constant="10" id="Ruv-Hm-ktl"/>
+                                    <constraint firstItem="hRk-md-M8R" firstAttribute="leading" secondItem="R0O-wK-3O1" secondAttribute="leading" constant="10" id="h0X-3I-hzF"/>
+                                    <constraint firstAttribute="bottom" secondItem="hRk-md-M8R" secondAttribute="bottom" constant="10" id="jD8-He-Sda"/>
+                                    <constraint firstItem="hRk-md-M8R" firstAttribute="top" secondItem="R0O-wK-3O1" secondAttribute="top" constant="10" id="zAn-x5-bvg"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e1n-QH-23t">
+                                <rect key="frame" x="0.0" y="812" width="414" height="50"/>
+                                <state key="normal" title="はじめる！">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="startBtn:" destination="7gn-n8-X1u" eventType="touchUpInside" id="8qf-Iw-7gQ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="e1n-QH-23t" firstAttribute="top" secondItem="R0O-wK-3O1" secondAttribute="bottom" id="3m6-25-2P9"/>
+                            <constraint firstItem="zqu-gt-Qmu" firstAttribute="leading" secondItem="idW-3L-3AN" secondAttribute="trailing" id="E2T-pS-XRz"/>
+                            <constraint firstItem="Qw4-xh-8VE" firstAttribute="trailing" secondItem="e1n-QH-23t" secondAttribute="trailing" id="K8y-d0-fnT"/>
+                            <constraint firstItem="idW-3L-3AN" firstAttribute="top" secondItem="Qw4-xh-8VE" secondAttribute="top" id="eBg-be-V3j"/>
+                            <constraint firstItem="Qw4-xh-8VE" firstAttribute="bottom" secondItem="R0O-wK-3O1" secondAttribute="bottom" constant="50" id="fWq-gZ-GZm"/>
+                            <constraint firstItem="idW-3L-3AN" firstAttribute="leading" secondItem="csg-WE-RD1" secondAttribute="leading" id="hVZ-pg-21E"/>
+                            <constraint firstItem="R0O-wK-3O1" firstAttribute="top" secondItem="zqu-gt-Qmu" secondAttribute="bottom" id="hzO-lq-bK4"/>
+                            <constraint firstItem="e1n-QH-23t" firstAttribute="bottom" secondItem="Qw4-xh-8VE" secondAttribute="bottom" id="jmj-Ze-tFd"/>
+                            <constraint firstItem="Qw4-xh-8VE" firstAttribute="trailing" secondItem="zqu-gt-Qmu" secondAttribute="trailing" id="kLI-3o-5MN"/>
+                            <constraint firstItem="e1n-QH-23t" firstAttribute="leading" secondItem="Qw4-xh-8VE" secondAttribute="leading" id="mil-9W-lqN"/>
+                            <constraint firstItem="zqu-gt-Qmu" firstAttribute="top" secondItem="Qw4-xh-8VE" secondAttribute="top" id="qLm-In-kSW"/>
+                            <constraint firstItem="R0O-wK-3O1" firstAttribute="trailing" secondItem="Qw4-xh-8VE" secondAttribute="trailing" id="zca-Iv-Ovk"/>
+                            <constraint firstItem="R0O-wK-3O1" firstAttribute="leading" secondItem="Qw4-xh-8VE" secondAttribute="leading" id="zvc-wn-4Nf"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Qw4-xh-8VE"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="idW-3L-3AN" id="jAc-4t-q4u"/>
+                        <outlet property="img1" destination="MAm-FZ-Cgx" id="NFn-hE-SnH"/>
+                        <outlet property="img2" destination="DEV-kp-FqH" id="RDE-4p-2NP"/>
+                        <outlet property="img3" destination="uaP-Jh-06P" id="u20-tb-6LM"/>
+                        <outlet property="img4" destination="tHD-A3-1DD" id="FKf-dj-ble"/>
+                        <outlet property="img5" destination="Sot-dw-O74" id="TDN-61-2J1"/>
+                        <outlet property="img6" destination="v6O-sl-4PQ" id="YCs-V7-eAc"/>
+                        <outlet property="setumei1" destination="42J-Sa-KVs" id="VMy-WL-Vgc"/>
+                        <outlet property="setumei2" destination="7U9-Wz-mU1" id="z9B-aV-Gl1"/>
+                        <outlet property="startBtn" destination="e1n-QH-23t" id="LsE-wn-Yd8"/>
+                        <outlet property="titleLabel" destination="zqu-gt-Qmu" id="HGq-oD-1SP"/>
+                        <outlet property="view1" destination="R0O-wK-3O1" id="9za-fR-Axd"/>
+                        <outlet property="view2" destination="hRk-md-M8R" id="TEY-WA-TqK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="agj-PA-VB8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="73.913043478260875" y="38.839285714285715"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rakka_bousai_kaichudentou.png" width="450" height="362"/>
+        <image name="rakka_bousai_kanpan.png" width="400" height="361"/>
+        <image name="rakka_bousai_water.png" width="178" height="400"/>
+        <image name="rakka_gunte.jpg" width="800" height="750"/>
+        <image name="rakka_portable_game.png" width="84" height="68.639999389648438"/>
+        <image name="rakka_soccer_ball.png" width="730" height="730"/>
+    </resources>
+</document>

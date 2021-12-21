@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DWo-bn-oNY">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hz Map View Controller-->
+        <scene sceneID="guq-LE-qei">
+            <objects>
+                <viewController id="DWo-bn-oNY" customClass="HzMapViewController" customModule="SHSinfo2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1xc-1f-HGD">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IMr-h6-fOf">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j08-o6-a7l">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="dTz-eK-kSA"/>
+                                    <constraint firstAttribute="height" constant="30" id="kpg-QI-ZTI"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="DWo-bn-oNY" eventType="touchUpInside" id="lw9-Jn-lww"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="IMr-h6-fOf" firstAttribute="leading" secondItem="Ln2-xU-iYJ" secondAttribute="leading" id="8q9-wd-rbs"/>
+                            <constraint firstItem="j08-o6-a7l" firstAttribute="top" secondItem="Ln2-xU-iYJ" secondAttribute="top" id="FcU-TZ-bUP"/>
+                            <constraint firstItem="IMr-h6-fOf" firstAttribute="top" secondItem="j08-o6-a7l" secondAttribute="bottom" id="P32-Ob-Wds"/>
+                            <constraint firstItem="IMr-h6-fOf" firstAttribute="trailing" secondItem="Ln2-xU-iYJ" secondAttribute="trailing" id="gfY-kE-m38"/>
+                            <constraint firstItem="IMr-h6-fOf" firstAttribute="bottom" secondItem="Ln2-xU-iYJ" secondAttribute="bottom" id="tvD-bp-Tm4"/>
+                            <constraint firstItem="j08-o6-a7l" firstAttribute="leading" secondItem="Ln2-xU-iYJ" secondAttribute="leading" id="xVg-dZ-ZiJ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Ln2-xU-iYJ"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="j08-o6-a7l" id="UsH-SP-gBb"/>
+                        <outlet property="webview" destination="IMr-h6-fOf" id="a3O-ro-LPK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lfN-EV-zN9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136" y="-139"/>
+        </scene>
+    </scenes>
+</document>

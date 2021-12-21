@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3uo-XE-h4s">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Touroku View Controller-->
+        <scene sceneID="yut-uL-faL">
+            <objects>
+                <viewController id="3uo-XE-h4s" customClass="tourokuViewController" customModule="SHSinfoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="JaP-9G-kmv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pjh-qB-OlA">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="YeT-Xz-xGX"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="70" id="Zke-Zu-Xv4"/>
+                                    <constraint firstAttribute="width" constant="70" id="l5U-96-1Zj"/>
+                                    <constraint firstAttribute="height" constant="30" id="ywl-jd-1TQ"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnBack:" destination="3uo-XE-h4s" eventType="touchUpInside" id="FV8-Ad-ybc"/>
+                                </connections>
+                            </button>
+                            <pickerView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cum-7g-NAd">
+                                <rect key="frame" x="0.0" y="124" width="414" height="300"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="NWe-sX-GSs"/>
+                                </constraints>
+                            </pickerView>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Rxf-L2-iun">
+                                <rect key="frame" x="0.0" y="434" width="414" height="378"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="areaCell" id="qeP-pT-X1g">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="43.5"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="qeP-pT-X1g" id="I1F-Kw-ULq">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bep-vu-mT9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="cum-7g-NAd" firstAttribute="leading" secondItem="bep-vu-mT9" secondAttribute="leading" id="40H-uC-sQU"/>
+                            <constraint firstItem="cum-7g-NAd" firstAttribute="top" secondItem="Pjh-qB-OlA" secondAttribute="bottom" constant="50" id="EOj-D5-BGc"/>
+                            <constraint firstItem="bep-vu-mT9" firstAttribute="trailing" secondItem="Rxf-L2-iun" secondAttribute="trailing" id="RZE-Wy-WWG"/>
+                            <constraint firstItem="Pjh-qB-OlA" firstAttribute="leading" secondItem="bep-vu-mT9" secondAttribute="leading" id="TUM-ec-5Bd"/>
+                            <constraint firstItem="bep-vu-mT9" firstAttribute="bottom" secondItem="Rxf-L2-iun" secondAttribute="bottom" constant="50" id="TbL-tD-eZF"/>
+                            <constraint firstItem="Rxf-L2-iun" firstAttribute="top" secondItem="cum-7g-NAd" secondAttribute="bottom" constant="10" id="gUH-fj-mZh"/>
+                            <constraint firstAttribute="trailing" secondItem="cum-7g-NAd" secondAttribute="trailing" id="ork-EZ-mxT"/>
+                            <constraint firstItem="Pjh-qB-OlA" firstAttribute="top" secondItem="bep-vu-mT9" secondAttribute="top" id="p2g-IS-Kql"/>
+                            <constraint firstItem="Rxf-L2-iun" firstAttribute="leading" secondItem="bep-vu-mT9" secondAttribute="leading" id="y86-vX-qgW"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btnModoru" destination="Pjh-qB-OlA" id="Y1e-cL-UDu"/>
+                        <outlet property="citySelect" destination="cum-7g-NAd" id="LD1-tQ-ZA8"/>
+                        <outlet property="tableView" destination="Rxf-L2-iun" id="RJO-A4-6gZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8QO-VZ-98M" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-310" y="152"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

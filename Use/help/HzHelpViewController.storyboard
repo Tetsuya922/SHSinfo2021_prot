@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="P56-Oa-mnf">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Hz Help View Controller-->
+        <scene sceneID="2vF-yd-AxS">
+            <objects>
+                <viewController id="P56-Oa-mnf" customClass="HzHelpViewController" customModule="SHSinfo2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="uFZ-tR-BT9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5I-x1-MPg">
+                                <rect key="frame" x="0.0" y="20" width="70" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="Moq-mQ-Nrx"/>
+                                    <constraint firstAttribute="width" constant="70" id="neZ-t2-bVs"/>
+                                </constraints>
+                                <state key="normal" title="戻る"/>
+                                <connections>
+                                    <action selector="btnBack:" destination="P56-Oa-mnf" eventType="touchUpInside" id="Rxc-rH-Ipc"/>
+                                </connections>
+                            </button>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ucf-1M-UiE">
+                                <rect key="frame" x="0.0" y="50" width="375" height="617"/>
+                                <gestureRecognizers/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="ZRC-7Q-sZ0" appends="YES" id="bIR-Ll-WlQ"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="R5I-x1-MPg" firstAttribute="leading" secondItem="W1M-s7-fsf" secondAttribute="leading" id="R35-kP-hwu"/>
+                            <constraint firstItem="Ucf-1M-UiE" firstAttribute="leading" secondItem="W1M-s7-fsf" secondAttribute="leading" id="W9g-kZ-Gp0"/>
+                            <constraint firstItem="Ucf-1M-UiE" firstAttribute="top" secondItem="R5I-x1-MPg" secondAttribute="bottom" id="cag-CO-8Hz"/>
+                            <constraint firstAttribute="bottom" secondItem="Ucf-1M-UiE" secondAttribute="bottom" id="ksI-JW-knX"/>
+                            <constraint firstItem="R5I-x1-MPg" firstAttribute="top" secondItem="W1M-s7-fsf" secondAttribute="top" id="rA1-Iy-X4c"/>
+                            <constraint firstItem="Ucf-1M-UiE" firstAttribute="trailing" secondItem="W1M-s7-fsf" secondAttribute="trailing" id="uAH-wl-TOe"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="W1M-s7-fsf"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnModoru" destination="R5I-x1-MPg" id="fxW-Sd-A6l"/>
+                        <outlet property="scrollView" destination="Ucf-1M-UiE" id="Tp6-vb-5cI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kjX-en-DgT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="left" id="ZRC-7Q-sZ0">
+                    <connections>
+                        <action selector="leftSwipe:" destination="P56-Oa-mnf" id="yOi-5b-LgO"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="45.600000000000001" y="178.56071964017991"/>
+        </scene>
+    </scenes>
+</document>

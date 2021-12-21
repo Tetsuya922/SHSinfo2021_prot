@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="2LG-MU-DIO">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saigai View Controller-->
+        <scene sceneID="qmX-eg-R4s">
+            <objects>
+                <viewController id="2LG-MU-DIO" customClass="SaigaiViewController" customModule="SHSinfo2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7JO-4b-LpU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="X0b-36-IKe">
+                                <rect key="frame" x="50" y="44" width="314" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="ew3-1h-p9b">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="284"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="kYK-fs-m27">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="284"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cD3-2M-AC8" userLabel="btn2">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="254"/>
+                                                        <state key="normal" title="Button" image="g3-dosha"/>
+                                                        <connections>
+                                                            <action selector="btn2:" destination="2LG-MU-DIO" eventType="touchUpInside" id="QFb-Lw-N16"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="土砂災害" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dme-j5-zRh">
+                                                        <rect key="frame" x="0.0" y="254" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                                <constraints>
+                                                    <constraint firstItem="dme-j5-zRh" firstAttribute="leading" secondItem="kYK-fs-m27" secondAttribute="leading" id="Muz-Is-sre"/>
+                                                    <constraint firstItem="dme-j5-zRh" firstAttribute="top" secondItem="cD3-2M-AC8" secondAttribute="bottom" id="XTE-NZ-nMe"/>
+                                                </constraints>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ItY-kV-hef">
+                                                <rect key="frame" x="182" y="0.0" width="132" height="284"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="doM-H3-Y5C" userLabel="btn4">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="254"/>
+                                                        <state key="normal" title="Button" image="g3-kouzui"/>
+                                                        <connections>
+                                                            <action selector="btn4:" destination="2LG-MU-DIO" eventType="touchUpInside" id="P7W-zX-sx9"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="浸水害" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="S9w-L8-1ZL">
+                                                        <rect key="frame" x="0.0" y="254" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="50" translatesAutoresizingMaskIntoConstraints="NO" id="i5i-oS-a54">
+                                        <rect key="frame" x="0.0" y="334" width="314" height="284"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="MuT-so-pRL">
+                                                <rect key="frame" x="0.0" y="0.0" width="132" height="284"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0o8-PG-Zgn" userLabel="btn1">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="254"/>
+                                                        <state key="normal" title="Button" image="g3-ooame"/>
+                                                        <connections>
+                                                            <action selector="btn1:" destination="2LG-MU-DIO" eventType="touchUpInside" id="96v-Mo-HIK"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="洪水害" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pW3-d2-jP8">
+                                                        <rect key="frame" x="0.0" y="254" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="LoT-WI-8Tc">
+                                                <rect key="frame" x="182" y="0.0" width="132" height="284"/>
+                                                <subviews>
+                                                    <button opaque="NO" contentMode="scaleAspectFit" verticalCompressionResistancePriority="749" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TwI-dn-OZW" userLabel="btn3">
+                                                        <rect key="frame" x="0.0" y="0.0" width="132" height="254"/>
+                                                        <state key="normal" title="Button" image="g3-amenoyohou"/>
+                                                        <connections>
+                                                            <action selector="btn3:" destination="2LG-MU-DIO" eventType="touchUpInside" id="C4D-QH-7Hi"/>
+                                                        </connections>
+                                                    </button>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="雨雲" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1c7-pr-msx">
+                                                        <rect key="frame" x="0.0" y="254" width="132" height="30"/>
+                                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                                        <nil key="textColor"/>
+                                                        <nil key="highlightedColor"/>
+                                                    </label>
+                                                </subviews>
+                                            </stackView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="XSh-mx-7i8"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="X0b-36-IKe" firstAttribute="leading" secondItem="XSh-mx-7i8" secondAttribute="leading" constant="50" id="5S9-ps-Z1f"/>
+                            <constraint firstAttribute="trailing" secondItem="X0b-36-IKe" secondAttribute="trailing" constant="50" id="CkH-Gq-PJS"/>
+                            <constraint firstItem="X0b-36-IKe" firstAttribute="top" secondItem="XSh-mx-7i8" secondAttribute="top" id="ND6-bv-bGb"/>
+                            <constraint firstItem="XSh-mx-7i8" firstAttribute="bottom" secondItem="X0b-36-IKe" secondAttribute="bottom" constant="200" id="xyg-R6-Z00"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="0o8-PG-Zgn" id="woB-46-Y7P"/>
+                        <outlet property="btn2" destination="cD3-2M-AC8" id="YpS-Z0-tnm"/>
+                        <outlet property="btn3" destination="TwI-dn-OZW" id="6IA-SI-i1l"/>
+                        <outlet property="btn4" destination="doM-H3-Y5C" id="PHa-HU-C0B"/>
+                        <outlet property="view1" destination="X0b-36-IKe" id="4Xs-CE-TEd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BL8-Ao-dEd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-33.333333333333336" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="g3-amenoyohou" width="200" height="200"/>
+        <image name="g3-dosha" width="200" height="200"/>
+        <image name="g3-kouzui" width="200" height="200"/>
+        <image name="g3-ooame" width="200" height="200"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

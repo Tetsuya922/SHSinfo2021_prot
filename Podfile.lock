@@ -1,0 +1,16 @@
+PODS:
+  - HNToaster (1.0.0)
+
+DEPENDENCIES:
+  - HNToaster (~> 1.0)
+
+SPEC REPOS:
+  trunk:
+    - HNToaster
+
+SPEC CHECKSUMS:
+  HNToaster: fe379384ffe698f05e6535525362bc45b8be6f19
+
+PODFILE CHECKSUM: 66d639c367327e9632db3bc2c4eb378fc394efaf
+
+COCOAPODS: 1.11.2

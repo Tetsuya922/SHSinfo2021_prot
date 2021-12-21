@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="MpC-Uz-np6">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Kisyoutyou View Controller-->
+        <scene sceneID="JRO-Q8-3hE">
+            <objects>
+                <viewController id="MpC-Uz-np6" customClass="KisyoutyouViewController" customModule="SHSinfo2021" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FOJ-AR-Pol">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i1K-A7-QXy">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.47843137254901957" green="0.68235294117647061" blue="0.9882352941176471" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="ExL-Wr-LTW"/>
+                                    <constraint firstAttribute="height" constant="30" id="I1k-MO-G86"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="modoru:" destination="MpC-Uz-np6" eventType="touchUpInside" id="uSb-GY-Ncd"/>
+                                </connections>
+                            </button>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d7d-IZ-F2k">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hjv-zE-JvQ">
+                                <rect key="frame" x="0.0" y="74" width="414" height="783"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fJT-8k-6Cp">
+                                <rect key="frame" x="-2" y="433" width="418" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1:" destination="MpC-Uz-np6" eventType="touchUpInside" id="534-Vg-hax"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Wbj-dB-3ew">
+                                <rect key="frame" x="0.0" y="305" width="474" height="287"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JaQ-bg-mKz">
+                                        <rect key="frame" x="0.0" y="0.0" width="474" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="tiH-FS-htJ">
+                                        <rect key="frame" x="-2" y="20.5" width="478" height="31"/>
+                                        <connections>
+                                            <action selector="sliderAction:" destination="MpC-Uz-np6" eventType="valueChanged" id="zz0-3h-wM4"/>
+                                        </connections>
+                                    </slider>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wld-r3-C2u">
+                                        <rect key="frame" x="0.0" y="50.5" width="474" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hu4-ga-MRh">
+                                        <rect key="frame" x="0.0" y="71" width="474" height="216"/>
+                                        <subviews>
+                                            <pickerView contentMode="scaleToFill" verticalCompressionResistancePriority="749" translatesAutoresizingMaskIntoConstraints="NO" id="t2g-el-jBd">
+                                                <rect key="frame" x="0.0" y="0.0" width="474" height="216"/>
+                                            </pickerView>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="w9z-SG-MZz"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Hjv-zE-JvQ" firstAttribute="trailing" secondItem="w9z-SG-MZz" secondAttribute="trailing" id="0gN-3q-9eS"/>
+                            <constraint firstItem="d7d-IZ-F2k" firstAttribute="leading" secondItem="w9z-SG-MZz" secondAttribute="leading" id="9FQ-Pf-Qyb"/>
+                            <constraint firstItem="d7d-IZ-F2k" firstAttribute="bottom" secondItem="w9z-SG-MZz" secondAttribute="bottom" id="FRR-3c-40l"/>
+                            <constraint firstItem="d7d-IZ-F2k" firstAttribute="trailing" secondItem="w9z-SG-MZz" secondAttribute="trailing" id="Gp5-of-j9H"/>
+                            <constraint firstItem="w9z-SG-MZz" firstAttribute="bottom" secondItem="Hjv-zE-JvQ" secondAttribute="bottom" constant="5" id="Ju8-gG-Ql4"/>
+                            <constraint firstItem="Hjv-zE-JvQ" firstAttribute="leading" secondItem="w9z-SG-MZz" secondAttribute="leading" id="LZg-XC-Kab"/>
+                            <constraint firstItem="d7d-IZ-F2k" firstAttribute="top" secondItem="i1K-A7-QXy" secondAttribute="bottom" id="ZMm-AV-LmX"/>
+                            <constraint firstItem="Hjv-zE-JvQ" firstAttribute="top" secondItem="i1K-A7-QXy" secondAttribute="bottom" id="eTW-e3-ly0"/>
+                            <constraint firstItem="i1K-A7-QXy" firstAttribute="top" secondItem="w9z-SG-MZz" secondAttribute="top" id="haN-57-PVx"/>
+                            <constraint firstItem="i1K-A7-QXy" firstAttribute="leading" secondItem="w9z-SG-MZz" secondAttribute="leading" id="ng7-IC-ZDb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="btn1" destination="fJT-8k-6Cp" id="mTn-B8-THP"/>
+                        <outlet property="label1" destination="wld-r3-C2u" id="pnq-bd-Kes"/>
+                        <outlet property="label2" destination="JaQ-bg-mKz" id="MRg-NR-3Pe"/>
+                        <outlet property="modorubtn" destination="i1K-A7-QXy" id="cLW-fX-fkD"/>
+                        <outlet property="picker1" destination="t2g-el-jBd" id="r9q-Cc-9Gu"/>
+                        <outlet property="slider1" destination="tiH-FS-htJ" id="841-tD-6pG"/>
+                        <outlet property="view3" destination="Wbj-dB-3ew" id="1r4-FQ-baA"/>
+                        <outlet property="webview1" destination="d7d-IZ-F2k" id="bsp-CL-nEh"/>
+                        <outlet property="webview2" destination="Hjv-zE-JvQ" id="Oup-tz-njv"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pGC-Bl-gvI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="umg-wl-5Er">
+                    <connections>
+                        <action selector="leftSwipe:" destination="MpC-Uz-np6" id="MiZ-YP-bKa"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="160.86956521739131" y="54.910714285714285"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

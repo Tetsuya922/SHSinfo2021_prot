@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="QvV-Ib-sDl">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gen Roule View Controller-->
+        <scene sceneID="25z-TN-gIy">
+            <objects>
+                <viewController id="QvV-Ib-sDl" customClass="genRouleViewController" customModule="SHSinfo2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="sQb-iK-oQT">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OIA-4n-5xL">
+                                <rect key="frame" x="0.0" y="44" width="100" height="30"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Kp0-0T-9Hm"/>
+                                    <constraint firstAttribute="height" constant="30" id="YAv-q6-aiS"/>
+                                </constraints>
+                                <state key="normal" title="メニュ戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="AOR-7B-mHW"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eTk-zP-ZHm">
+                                <rect key="frame" x="120" y="134" width="227" height="76"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YPg-5X-QPu">
+                                <rect key="frame" x="94" y="256" width="229" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn1:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="FUW-5w-Yhk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVJ-px-yTU">
+                                <rect key="frame" x="120" y="312" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn2:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="seD-x7-xbG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4n3-Db-hNN">
+                                <rect key="frame" x="120" y="372" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn3:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="fiV-Eb-bFk"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YBC-4t-ytq">
+                                <rect key="frame" x="120" y="433" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn4:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="o2z-Th-f7a"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jV6-g2-zKn">
+                                <rect key="frame" x="120" y="500" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn5:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="dke-pf-cic"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P7X-3a-jwv">
+                                <rect key="frame" x="120" y="573" width="185" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="btn6:" destination="QvV-Ib-sDl" eventType="touchUpInside" id="RMr-Xt-BmZ"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="OIA-4n-5xL" firstAttribute="top" secondItem="PV5-zU-T4h" secondAttribute="top" id="7YH-F8-S6A"/>
+                            <constraint firstItem="OIA-4n-5xL" firstAttribute="leading" secondItem="PV5-zU-T4h" secondAttribute="leading" id="o61-nK-oZo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PV5-zU-T4h"/>
+                    </view>
+                    <connections>
+                        <outlet property="backBtn" destination="OIA-4n-5xL" id="zSN-dN-2px"/>
+                        <outlet property="btn1" destination="YPg-5X-QPu" id="RDr-2k-dqF"/>
+                        <outlet property="btn2" destination="eVJ-px-yTU" id="x0w-KX-8WD"/>
+                        <outlet property="btn3" destination="4n3-Db-hNN" id="qfD-lJ-WPL"/>
+                        <outlet property="btn4" destination="YBC-4t-ytq" id="lFK-r3-Jen"/>
+                        <outlet property="btn5" destination="jV6-g2-zKn" id="Rld-CY-ORD"/>
+                        <outlet property="btn6" destination="P7X-3a-jwv" id="l1M-Y9-g7Q"/>
+                        <outlet property="titleLabel" destination="eTk-zP-ZHm" id="plD-rY-mUD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eNK-O9-bvA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-217.39130434782609" y="10.714285714285714"/>
+        </scene>
+    </scenes>
+</document>

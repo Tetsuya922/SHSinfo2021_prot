@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="bwm-1E-zu5">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Earthquake View Controller2-->
+        <scene sceneID="fDA-AX-6W5">
+            <objects>
+                <viewController id="bwm-1E-zu5" userLabel="Earthquake View Controller2" customClass="EarthquakeViewController2" customModule="SHSinfo2019" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bCG-8u-zL2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aYr-XL-JKK">
+                                <rect key="frame" x="0.0" y="74" width="414" height="788"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <gestureRecognizers/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VTg-oj-zRi">
+                                <rect key="frame" x="0.0" y="44" width="70" height="30"/>
+                                <color key="backgroundColor" red="0.47843137250000001" green="0.68235294120000001" blue="0.98823529409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="70" id="4YC-op-fuS"/>
+                                    <constraint firstAttribute="height" constant="30" id="M3v-JC-dti"/>
+                                </constraints>
+                                <state key="normal" title="戻る">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="back:" destination="bwm-1E-zu5" eventType="touchUpInside" id="QMt-31-A0g"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <gestureRecognizers/>
+                        <constraints>
+                            <constraint firstItem="VTg-oj-zRi" firstAttribute="top" secondItem="9lr-H6-JYL" secondAttribute="top" id="8CM-BX-2Ja"/>
+                            <constraint firstItem="aYr-XL-JKK" firstAttribute="top" secondItem="VTg-oj-zRi" secondAttribute="bottom" id="Iow-2u-2u0"/>
+                            <constraint firstItem="VTg-oj-zRi" firstAttribute="leading" secondItem="9lr-H6-JYL" secondAttribute="leading" id="TQB-2U-Uhf"/>
+                            <constraint firstItem="aYr-XL-JKK" firstAttribute="trailing" secondItem="9lr-H6-JYL" secondAttribute="trailing" id="haN-XJ-QxI"/>
+                            <constraint firstItem="aYr-XL-JKK" firstAttribute="bottom" secondItem="9lr-H6-JYL" secondAttribute="bottom" id="nAK-Jx-a9P"/>
+                            <constraint firstItem="aYr-XL-JKK" firstAttribute="leading" secondItem="9lr-H6-JYL" secondAttribute="leading" id="yjM-Ee-zbk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9lr-H6-JYL"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnBack" destination="VTg-oj-zRi" id="Ps7-NK-HAL"/>
+                        <outlet property="webView" destination="aYr-XL-JKK" id="Ax0-gk-sKc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Chk-id-fRo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <swipeGestureRecognizer direction="right" id="XfI-zR-zSh">
+                    <connections>
+                        <action selector="leftSwipe:" destination="bwm-1E-zu5" id="4AI-UI-dCh"/>
+                    </connections>
+                </swipeGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="136" y="-139"/>
+        </scene>
+    </scenes>
+</document>

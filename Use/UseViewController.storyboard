@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xt3-Xy-Uo0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17125"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Use View Controller-->
+        <scene sceneID="z2M-C4-rFN">
+            <objects>
+                <viewController id="Xt3-Xy-Uo0" customClass="UseViewController" customModule="SHSinfoAR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XeW-M8-iHc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FlD-wC-Qpg">
+                                <rect key="frame" x="0.0" y="44" width="414" height="778"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ESP-ss-uU0">
+                                        <rect key="frame" x="10" y="120" width="394" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="AR機能の使い方"/>
+                                        <connections>
+                                            <action selector="usebtn:" destination="Xt3-Xy-Uo0" eventType="touchUpInside" id="wzT-EE-r0z"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="a0M-5y-ZTU">
+                                        <rect key="frame" x="10" y="244" width="394" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="ハザードマップの使い方"/>
+                                        <connections>
+                                            <action selector="HZbtn:" destination="Xt3-Xy-Uo0" eventType="touchUpInside" id="uCZ-L0-tSY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Khc-hb-Vql">
+                                        <rect key="frame" x="10" y="182" width="394" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="ARで表示される表示板の見方"/>
+                                        <connections>
+                                            <action selector="mikatabtn:" destination="Xt3-Xy-Uo0" eventType="touchUpInside" id="J7w-sj-IuS"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0EV-ID-SPQ">
+                                        <rect key="frame" x="10" y="306" width="394" height="42"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="42" id="vCe-tf-rjP"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="避難所等データがない場合"/>
+                                        <connections>
+                                            <action selector="hinanBtn:" destination="Xt3-Xy-Uo0" eventType="touchUpInside" id="Ecx-5k-33e"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="0EV-ID-SPQ" firstAttribute="top" secondItem="a0M-5y-ZTU" secondAttribute="bottom" constant="20" id="37L-KX-PzT"/>
+                                    <constraint firstItem="a0M-5y-ZTU" firstAttribute="top" secondItem="Khc-hb-Vql" secondAttribute="bottom" constant="20" id="5T8-RO-iPg"/>
+                                    <constraint firstItem="0EV-ID-SPQ" firstAttribute="leading" secondItem="FlD-wC-Qpg" secondAttribute="leading" constant="10" id="S7A-U0-uUH"/>
+                                    <constraint firstAttribute="trailing" secondItem="Khc-hb-Vql" secondAttribute="trailing" constant="10" id="YA7-7r-Mjd"/>
+                                    <constraint firstItem="ESP-ss-uU0" firstAttribute="leading" secondItem="FlD-wC-Qpg" secondAttribute="leading" constant="10" id="ZJK-XW-iGk"/>
+                                    <constraint firstItem="Khc-hb-Vql" firstAttribute="leading" secondItem="FlD-wC-Qpg" secondAttribute="leading" constant="10" id="hWX-Wx-ffM"/>
+                                    <constraint firstItem="a0M-5y-ZTU" firstAttribute="leading" secondItem="FlD-wC-Qpg" secondAttribute="leading" constant="10" id="nsf-EL-gyy"/>
+                                    <constraint firstAttribute="trailing" secondItem="0EV-ID-SPQ" secondAttribute="trailing" constant="10" id="oOE-0J-mgo"/>
+                                    <constraint firstAttribute="trailing" secondItem="ESP-ss-uU0" secondAttribute="trailing" constant="10" id="tKZ-BY-5DO"/>
+                                    <constraint firstItem="Khc-hb-Vql" firstAttribute="top" secondItem="ESP-ss-uU0" secondAttribute="bottom" constant="20" id="vyQ-At-zBG"/>
+                                    <constraint firstAttribute="trailing" secondItem="a0M-5y-ZTU" secondAttribute="trailing" constant="10" id="wfO-YW-P44"/>
+                                    <constraint firstItem="ESP-ss-uU0" firstAttribute="top" secondItem="FlD-wC-Qpg" secondAttribute="top" constant="120" id="yIw-fg-0Pf"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Dav-js-OaJ"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Dav-js-OaJ" firstAttribute="bottom" secondItem="FlD-wC-Qpg" secondAttribute="bottom" constant="40" id="4mt-Xg-HLJ"/>
+                            <constraint firstItem="FlD-wC-Qpg" firstAttribute="top" secondItem="Dav-js-OaJ" secondAttribute="top" id="JAg-fT-HRs"/>
+                            <constraint firstItem="FlD-wC-Qpg" firstAttribute="leading" secondItem="Dav-js-OaJ" secondAttribute="leading" id="JJg-bI-7tG"/>
+                            <constraint firstItem="Dav-js-OaJ" firstAttribute="trailing" secondItem="FlD-wC-Qpg" secondAttribute="trailing" id="SKL-Ex-kS8"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="HZButton" destination="a0M-5y-ZTU" id="iPO-Tw-yBZ"/>
+                        <outlet property="hinaBtn" destination="0EV-ID-SPQ" id="Jju-zD-cji"/>
+                        <outlet property="mikataButton" destination="Khc-hb-Vql" id="s8P-OI-QCM"/>
+                        <outlet property="useButton" destination="ESP-ss-uU0" id="dcj-sp-Fgn"/>
+                        <outlet property="view1" destination="FlD-wC-Qpg" id="RZn-tf-qa0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tWo-st-2Bm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="263.768115942029" y="73.660714285714278"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
